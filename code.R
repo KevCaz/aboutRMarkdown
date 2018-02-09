@@ -1,2 +1,3 @@
-## 
-cos(32)
+## @knitr code1
+cos(pi)
+## @knitr end_code1

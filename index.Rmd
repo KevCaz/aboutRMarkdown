@@ -13,6 +13,12 @@ output:
 ---
 
 
+```{r settingup, echo=FALSE, message=F}
+knitr::opts_chunk$set(
+  comment = "R>>"
+)
+knitr::read_chunk("code.R")
+```
 
 
 # R Markdown
@@ -32,9 +38,13 @@ output:
 
 > Markdown is intended to be as easy-to-read and easy-to-write as is feasible.
 
+`html`
+
 ```html
 <a href="https://github.com/KevCaz/aboutRMarkdown">My repo</a>
 ```
+
+`markdown`
 
 ```markdown
 [My repo](https://github.com/KevCaz/aboutRMarkdown)
@@ -42,6 +52,8 @@ output:
 
 
 ## Markdown
+
+`html`
 
 ```html
 <ol>
@@ -51,6 +63,7 @@ output:
 </ol>
 ```
 
+`markdown`
 
 ```markdown
 1. items1
@@ -98,3 +111,68 @@ http://commonmark.org/
 
 
 # R + markdown, how?
+
+## One package to rule them all
+
+https://rmarkdown.rstudio.com/
+
+
+## R package `knitr`
+
+https://yihui.name/knitr/
+
+<br>
+
+\`\`\`{R name, options}
+
+your_code
+
+\`\`\`
+
+
+## `yaml`
+
+- [Wikipedia says](https://en.wikipedia.org/wiki/YAML): "*YAML (YAML Ain't Markup Language) is a human-readable data serialization language.*"
+
+```YAML
+author: Bill June
+data: 2018-11-03
+```
+
+- metadata of your file
+
+## `pandoc`
+
+
+https://pandoc.org/
+
+
+## So
+
+1. writing `.Rmd` document
+2. Click to obtain your final document (call `render()`)
+3. `knitr` convert code chunk
+4. you obtain a `.md` version
+5. this `.md` file + yaml ==> pandoc
+
+
+## Dynamic document
+
+https://cran.r-project.org/web/packages/rmarkdown/
+
+
+## Analysis
+
+```{R code1}
+<<code1>>
+```
+
+## Figures
+
+```{R codechunk2, fig.width = 10}
+seqx <- seq(0,6*pi, 0.02)
+plot(seqx, cos(seqx))
+```
+
+
+# Let's practice
