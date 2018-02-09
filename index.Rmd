@@ -102,6 +102,7 @@ http://commonmark.org/
 - [Slack](https://slack.com/)
 - Github
 - [Markdown here](https://markdown-here.com/)
+- [Markdown here's awesome markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ## Mail
 
