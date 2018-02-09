@@ -1,9 +1,14 @@
 ---
 title: "about R Markdown"
 date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
-author: 'Kevin Cazelles, post-doc, McCann Lab, [<i class="fa fa-github fa-2x" aria-hidden="true"></i>](https://github.com/KevCaz/aboutRMarkdown)'
+author: 'Kevin Cazelles, post-doc, McCann Lab, [<i class="fa fa-github fa-2x" aria-hidden="true"></i>](https://github.com/KevCaz/aboutRMarkdown) <br> type `w` for
+wide screen'
 # lang: french
-output: ioslides_presentation
+output:
+  ioslides_presentation:
+    incremental: true
+    includes:
+      in_header: kcheader.html
   #html_document:
     #toc: true
     #toc_float: true
