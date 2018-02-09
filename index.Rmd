@@ -98,6 +98,7 @@ http://commonmark.org/
 
 - Static Website generator ([jekyll](https://jekyllrb.com/), [hugo](https://gohugo.io/), ...)
 - R markdown
+- [blogdown](https://bookdown.org/yihui/blogdown/) written using [bookdown](https://bookdown.org/yihui/bookdown/)
 - [Slack](https://slack.com/)
 - Github
 - [Markdown here](https://markdown-here.com/)
