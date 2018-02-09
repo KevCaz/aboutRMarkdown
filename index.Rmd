@@ -3,27 +3,24 @@ title: "about R Markdown"
 date: "`r paste0(format(Sys.time(), '%d %B %Y'))`"
 author: 'Kevin Cazelles, post-doc, McCann Lab, [<i class="fa fa-github fa-2x" aria-hidden="true"></i>](https://github.com/KevCaz/aboutRMarkdown)'
 # lang: french
-output:
-  ioslides_presentation:
-    incremental: true
-    widescreen: true
-    includes:
-      in_header: kcheader.html
-      #logo: ./img/logo.png
+output: ioslides_presentation
+  #html_document:
+    #toc: true
+    #toc_float: true
 ---
 
 
 ```{r settingup, echo=FALSE, message=F}
 knitr::opts_chunk$set(
-  comment = "R>>"
+    comment = "R>>"
 )
 knitr::read_chunk("code.R")
 ```
 
 
-# R Markdown
+# R rmarkdown
 
-## R + Markdown
+## R + Mark
 
 - R: data, analyses, figures.
 
@@ -171,10 +168,47 @@ https://cran.r-project.org/web/packages/rmarkdown/
 
 ## Figures
 
-```{R codechunk2, fig.width = 10}
+```{R codechunk2, fig.width = 8, echo = FALSE }
 seqx <- seq(0,6*pi, 0.02)
 plot(seqx, cos(seqx))
 ```
 
+## Table
+
+```{R codechunk3}
+head(CO2)
+```
+
+## Table
+
+```{R codechunk4}
+knitr::kable(head(CO2))
+```
+
 
 # Let's practice
+
+## Open a `Rmd` file in Rstudio
+
+<video width="90%" controls>
+ <source src="vid/RStudio1.webm" type="video/webm">
+ Your browser does not support the video tag.
+</video>
+
+
+## What does it look like?
+
+<video width="90%" controls>
+ <source src="vid/RStudio2.webm" type="video/webm">
+ Your browser does not support the video tag.
+</video>
+
+
+## Render your document
+
+<video width="90%" controls>
+ <source src="vid/RStudio3.webm" type="video/webm">
+ Your browser does not support the video tag.
+</video>
+
+Alternatively, you can use `render()`
